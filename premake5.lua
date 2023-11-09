@@ -1,11 +1,11 @@
-workspace "GrafikaLabovi_ImePrezime"
+workspace "GrafikaLabovi_LovreGradac"
     architecture "x64"
 
     configurations { "Debug", "Release"}
     outputdir="%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-project "GrafikaLabovi_ImePrezime"
-    location "GrafikaLabovi_ImePrezime"
+project "GrafikaLabovi_LovreGradac"
+    location "GrafikaLabovi_LovreGradac"
     kind "ConsoleApp"
     language "c++"
 
@@ -29,8 +29,8 @@ project "GrafikaLabovi_ImePrezime"
     includedirs
     {
         "%{prj.name}/src",
-        "%{prj.name}/src/vendor",
-        "%{prj.name}/res/shaders",
+        "%{prj.name}/src/**",
+        "%{prj.name}/res/shaders/**",
         "Depend/Include"
     }
 
